@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Projects</title>
+    <style>
+        *{
+            font-family: 'Roboto Slab', 'Merriweather';
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading, h3{
+            margin: 2%;
+            font-family: 'Roboto Slab';
+            margin-bottom: 5%;
+        }
+
+        #heading::after{
+            content: "";
+            display: inline-block;
+            width: 40%;
+            border: 2px solid lightgreen;
+            margin-left: 2%;
+            border-radius: 5px;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+            margin: 1.3rem;
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 2%;
+            border: 1.6px solid #dfdfdf;
+            border-radius: 5px;
+            gap: 8px;
+            margin-bottom: 3%;
+        }
+
+        .items p{
+            font-size: clamp(0.813rem, 0.739rem + 0.325vw, 1.125rem);
+        }
+
+        #links a{
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        #links a button{
+            border-radius: 5px;
+            border: .5px solid;
+            padding: .2em;
+            cursor: pointer;
+            position: relative;
+            font-weight: 600;
+        }
+        #links a button img{
+            position: relative;
+            top: 4px;
+        }
+        .tech{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3px;
+        }
+        .tech span{
+            margin-left: 5px;
+            font-size: .8em;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: .3em;
+            font-weight: 600;
+            background-color: whitesmoke;
+        }
+        .items:nth-child(odd){
+            background-color: rgb(225, 225, 225);
+        }
+
+        #horizontal-line {
+            position: relative;
+            width: 90%;
+            border-bottom: 2px solid #000; 
+            text-align: center;
+            margin: 5% 5%; 
+        }
+
+        .line-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff; 
+            padding: 0 10px; 
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px; 
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cacaca; 
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #747474; 
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Projects</h1>
+    <div id="container">
+        <!--  -->
+        <div class="items">
+            <h4>Cryptshield</h4>
+            <p>A lightweight web-based cryptography tool built with HTML, CSS, and JavaScript, supporting classic encryption and decryption algorithms like Caesar, Playfair, Vigenère, Vernam, and RC4, with an interactive UI for real-time cipher operations and learning.</p>
+            <div id="links">
+                <a href="https://github.com/Tanshi-Mehra/Cryptshield.git" target="_blank">
+                    <button>
+                        <span>Git Repo</span>
+                        <img src="../img/link.png" alt="">
+                    </button>
+                </a>
+            </div>
+            <div class="tech">
+                <h5>Technologies: </h5>
+                <span>HTML</span>
+                <span>CSS3</span>
+                <span>Javascript</span>
+            </div>
+        </div>
+        <!--  -->
+        <div class="items">
+            <h4>Tic Tac Toe Game</h4>
+            <p>Tic Tac Toe is a fun and interactive browser-based game built using HTML, CSS, and JavaScript. It allows two players to play alternately on a 3x3 grid until one wins or the match ends in a draw. The project focuses on logic building, DOM manipulation, and responsive UI design.</p>
+            <div id="links">
+                <a href="https://tanshi-mehra.github.io/Tic-Tac-Toe-Project/" target="_blank">
+                    <button>
+                        <span>Live Link</span>
+                        <img src="../img/link.png" alt="link">
+                    </button>
+                </a>
+                <a href="https://github.com/Tanshi-Mehra/Tic-Tac-Toe-Project.git" target="_blank">
+                    <button>
+                        <span>Git Repo</span>
+                        <img src="../img/link.png" alt="">
+                    </button>
+                </a>
+            </div>
+            <div class="tech">
+                <h5>Technologies: </h5>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Javascript</span>
+            </div>
+        </div>
+        <!--  -->
+        <div class="items">
+            <h4>Chatting application in Java</h4>
+            <p>A real-time chat application built in Java using Socket programming and Swing for the UI. It supports two-way communication between client and server with message timestamps and a modern chat interface.</p>
+            <div id="links">
+                <a href="https://github.com/Tanshi-Mehra/Chatting-Application-in-Java.git" target="_blank">
+                    <button>
+                        <span>Git Repo</span>
+                        <img src="../img/link.png" alt="link">
+                    </button>
+                </a>
+            </div>
+            <div class="tech">
+                <h5>Technologies: </h5>
+                <span>Java</span>
+                <span>Swing</span>
+                <span>AWT</span>
+                <span>Socket</span>
+            
+            </div>
+        </div>
+        <!--  -->
+        <div class="items">
+            <h4>Chrome Extension</h4>
+            <p>EduBoost is a smart productivity extension designed for college students. It centralizes your daily academic tasks — from managing notes and reminders to quick access to study resources — all in one elegant and efficient Chrome popup.</p>
+            <div id="links">
+                <a href="https://github.com/Tanshi-Mehra/CHROME-EXTENSION.git" target="_blank">
+                    <button>
+                        <span>Git Repo</span>
+                        <img src="../img/link.png" alt="">
+                    </button>
+                </a>
+            </div>
+            <div class="tech">
+                <h5>Technologies: </h5>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Javascript</span>
+                <span>Chrome-API</span>
+                <span>Developer-tools</span>
+                <span>Git&Github</span>
+            </div>
+        </div>
+        <!--  -->
+        <div class="items">
+            <h4>Sudoku Solver</h4>
+            <p>This is a web-based Sudoku solver that provides an interactive interface for inputting and solving Sudoku puzzles, including error handling features.</p>
+            <div id="links">
+                <a href="https://tanshi-mehra.github.io/Sudoku-Solver/" target="_blank">
+                    <button>
+                        <span>Live Link</span>
+                        <img src="../img/link.png" alt="link">
+                    </button>
+                </a>
+                <a href="https://github.com/Tanshi-Mehra/Sudoku-Solver.git" target="_blank">
+                    <button>
+                        <span>Git Repo</span>
+                        <img src="../img/link.png" alt="">
+                    </button>
+                </a>
+            </div>
+            <div class="tech">
+                <h5>Technologies: </h5>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+            </div>
+        </div>
+        <div class="items">
+            <h4>Face Mask Detection</h4>
+            <p>A real-time face mask detection system using deep learning and computer vision. This project identifies individuals wearing or not wearing masks through webcam video streams, helping enforce public health protocols.</p>
+            <div id="links">
+                <a href="https://github.com/Tanshi-Mehra/Face_Mask_Detection.git" target="_blank">
+                    <button>
+                        <span>Git Repo</span>
+                        <img src="../img/link.png" alt="">
+                    </button>
+                </a>
+            </div>
+            <div class="tech">
+                <h5>Technologies: </h5>
+                <span>Machine Learning</span>
+                <span>OpenCv</span>
+                <span>Python</span>
+                <span>CNN</span>
+                <span>TensorFlow</span>
+            </div>
+        </div>
+    </div>
+    <!-- Last line -->
+    <div id="horizontal-line">
+        <span class="line-text">More to Come 🎯</span>
+    </div>
+</body>
+</html>
