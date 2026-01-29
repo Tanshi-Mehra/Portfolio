@@ -5,7 +5,7 @@ This portfolio is a reflection of my skills and experiences.
 It includes the projects I have worked on, my resume, and contact information. 
 
 ## Demo
-You can view the live version of my portfolio here: [Live Demo](https://kshitijnegi12.github.io/Portfolio/)
+You can view the live version of my portfolio here: [Live Demo](https://tanshi-mehra.github.io/Portfolio/)
 
 ## Technologies Used
 The portfolio is built using:
